@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/custinfo",
+    "/custtable",
+    "/first",
+    "/second",
+    "/shopping",
+    "/third",
+    "/weather",
+    "/weatherinfo"
+  ]
+}
