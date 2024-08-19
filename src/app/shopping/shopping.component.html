@@ -1,0 +1,7 @@
+<div class="card-container">
+    <div class="p-card" *ngFor="let image of cart">
+      <img [src]="image.image" [alt]="image.title">
+      <div class="card-title">{{ image.title }}</div>
+    </div>
+  </div>
+  

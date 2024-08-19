@@ -1,0 +1,28 @@
+
+    
+    <div class="custom-header">
+        <a routerLink="/first" class="header-link"><i class="bi bi-house-door-fill"></i> First</a>
+        <a routerLink="/second" class="header-link"><i class="bi bi-file-person"></i> Second</a>
+        <a routerLink="/third" class="header-link"><i class="bi bi-info-square-fill"></i> Third</a>
+    </div>
+
+<h1> At App Component </h1>
+
+<!-- <div style="margin: 5em;">
+    <button (click)="login()">Login</button>
+    <button (click)="logout()">Logout</button>
+</div> -->
+
+<!-- <div>
+    <app-customertable (customerSelected)="onCustomerSelected($event)"></app-customertable>
+    <app-customerdetails [customer]="selectedCustomer"></app-customerdetails>
+  </div> -->
+  
+
+
+<!-- THis router outlet needs to come any content which you want to display first and wants to remain constant, generally header and logo. -->
+<router-outlet />
+
+
+
+

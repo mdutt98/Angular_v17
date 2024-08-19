@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of arrayElements">
+          <td>{{ item.index }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.description }}</td>
+          <td><img [src]="item.imageUrl" alt="Image" class="img-fluid"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

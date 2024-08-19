@@ -1,0 +1,22 @@
+
+h1
+{
+    margin-top:2%;
+    margin-bottom: 3%;
+}
+
+.custom-header {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1266ba;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #ccc7c7;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}

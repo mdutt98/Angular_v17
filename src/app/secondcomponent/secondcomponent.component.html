@@ -1,0 +1,23 @@
+<div>
+    <h1>Product List</h1>
+    <ul>
+      <li *ngFor="let product of products">
+        {{ product.name }} - {{ product.description }} <img [src]="product.imageUrl" alt="{{ product.name }}" width="50">
+      </li>
+    </ul>
+  
+    <h2>Add New Product</h2>
+    <form (ngSubmit)="addProduct()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="newProduct.name" name="name" required>
+  
+      <label for="description">Description:</label>
+      <input type="text" id="description" [(ngModel)]="newProduct.description" name="description" required>
+  
+      <label for="imageUrl">Image URL:</label>
+      <input type="text" id="imageUrl" [(ngModel)]="newProduct.imageUrl" name="imageUrl" required>
+  
+      <button type="submit">Add Product</button>
+    </form>
+  </div>
+  

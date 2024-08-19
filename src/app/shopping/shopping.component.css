@@ -1,0 +1,33 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create columns that are at least 300px wide */
+    gap: 20px; /* Add space between cards */
+    padding: 10px;
+  }
+  
+  .p-card {
+    display: flex;
+    flex-direction: column; /* Stack image and title vertically */
+    align-items: center;
+    gap: 10px;
+    height: 300px;
+    width: 100%; /* Ensure card takes full width within the grid cell */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px gray;
+    background-color: #fff;
+  }
+  
+  .p-card img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    object-fit: contain; /* Ensure image fits within the specified dimensions */
+  }
+  
+  .card-title {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
